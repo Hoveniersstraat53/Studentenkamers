@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studentenkamers Turnhout - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Studentenkamers Turnhout</a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="kamers.html">Kamers</a></li>
+                <li><a href="voorwaarden.html">Voorwaarden</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero hero-with-image">
+        <div class="hero-overlay">
+            <h1>Welkom bij Studentenkamers Turnhout</h1>
+            <p>Jouw ideale studentenkamer in het hart van de gezelligste stad van de Kempen</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- About Turnhout Section -->
+        <section>
+            <h2>Waarom Turnhout?</h2>
+            <div class="grid-2">
+                <div>
+                    <h3 style="color: #333; margin-bottom: 1rem;">🏛️ Rijke Geschiedenis & Cultuur</h3>
+                    <p>Turnhout combineert historische charme met moderne voorzieningen. De stad staat bekend om zijn kasteelmuseum, levendige marktpleinen en gezellige cafés waar studenten graag samenkomen.</p>
+                </div>
+                <div>
+                    <h3 style="color: #333; margin-bottom: 1rem;">🎓 Studentvriendelijk</h3>
+                    <p>Met Thomas More Hogeschool en verschillende andere onderwijsinstellingen in de buurt, is Turnhout een bruisende studentenstad. Alles wat je nodig hebt is op fietsafstand.</p>
+                </div>
+                <div>
+                    <h3 style="color: #333; margin-bottom: 1rem;">🚴 Perfecte Ligging</h3>
+                    <p>Centraal gelegen tussen Antwerpen en Eindhoven. Uitstekende verbindingen met openbaar vervoer maken het gemakkelijk om naar huis of naar andere steden te reizen.</p>
+                </div>
+                <div>
+                    <h3 style="color: #333; margin-bottom: 1rem;">💰 Betaalbaar Leven</h3>
+                    <p>Vergeleken met grote steden biedt Turnhout betaalbare huurprijzen zonder in te boeten op kwaliteit en comfort. Ideaal voor studenten met een budget.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student Life Section -->
+        <section>
+            <h2>Studentenleven in Turnhout</h2>
+            <p style="margin-bottom: 1.5rem;">Turnhout heeft alles wat je nodig hebt voor een geweldig studentenleven:</p>
+            
+            <div class="features-grid">
+                <div class="feature-item">🍕 Diverse restaurants & cafés</div>
+                <div class="feature-item">🏋️ Sportfaciliteiten</div>
+                <div class="feature-item">🎭 Culturele evenementen</div>
+                <div class="feature-item">🛍️ Winkels & supermarkten</div>
+                <div class="feature-item">🌳 Parken & natuur</div>
+                <div class="feature-item">🎉 Studentenverenigingen</div>
+            </div>
+
+            <div class="info-box" style="margin-top: 2rem;">
+                <h3>📍 Onze Locatie</h3>
+                <p>Onze studentenkamers liggen op een toplocatie: op loopafstand van het centrum, op fietsafstand van de campus, en met uitstekende verbindingen naar bushaltes en het station.</p>
+            </div>
+        </section>
+
+        <!-- Building Showcase Section -->
+        <section style="background: white; padding: 0; overflow: hidden;">
+            <div class="building-showcase">
+                <div class="building-image">
+                    <img src="./images/outside-buidling-1.jpg" alt="Ons gebouw" id="buildingPhoto">
+                    <div class="building-image-placeholder" id="buildingPlaceholder">
+                        <div class="placeholder-icon">🏢</div>
+                        <p>Jouw gebouw foto hier</p>
+                        <small>Voeg 'building-photo.jpg' toe aan de images map</small>
+                    </div>
+                </div>
+                <div class="building-info">
+                    <h2 style="color: var(--primary-color); border: none; margin-bottom: 1.5rem;">Ons Pand</h2>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #555; margin-bottom: 1.5rem;">
+                        Onze studentenkamers bevinden zich in een prachtig, recent gerenoveerd pand in het hart van Turnhout. 
+                        Het gebouw combineert historische charme met moderne comfort en biedt een veilige, gezellige thuisbasis voor studenten.
+                    </p>
+                    <div class="building-features">
+                        <div class="building-feature">
+                            <span class="feature-icon">🏛️</span>
+                            <div>
+                                <strong>Recent Gerenoveerd</strong>
+                                <p>Modern comfort in klassieke uitstraling</p>
+                            </div>
+                        </div>
+                        <div class="building-feature">
+                            <span class="feature-icon">📍</span>
+                            <div>
+                                <strong>Toplocatie</strong>
+                                <p>Centrum, campus en station op fietsafstand</p>
+                            </div>
+                        </div>
+                        <div class="building-feature">
+                            <span class="feature-icon">🔒</span>
+                            <div>
+                                <strong>Veilig & Verzorgd</strong>
+                                <p>Beveiligde toegang en regelmatig onderhoud</p>
+                            </div>
+                        </div>
+                        <div class="building-feature">
+                            <span class="feature-icon">🌳</span>
+                            <div>
+                                <strong>Groene Omgeving</strong>
+                                <p>Rustige buurt met parken in de nabijheid</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Rooms Section -->
+        <section>
+            <h2>Onze Studentenkamers</h2>
+            <p style="margin-bottom: 1.5rem;">Wij bieden 10 hoogwaardige studentenkamers aan in een recent gerenoveerd pand. Elke kamer is volledig bemeubeld en klaar om in te trekken.</p>
+            
+            <div class="grid-2" style="margin: 2rem 0;">
+                <div class="info-box">
+                    <h3>✨ Wat Wij Bieden</h3>
+                    <ul style="list-style: none; margin-top: 1rem;">
+                        <li style="padding: 0.5rem 0;">✓ Volledig bemeubelde kamers</li>
+                        <li style="padding: 0.5rem 0;">✓ Gratis WiFi</li>
+                        <li style="padding: 0.5rem 0;">✓ Gedeelde keuken & badkamer</li>
+                        <li style="padding: 0.5rem 0;">✓ All-in prijs (energie inbegrepen)</li>
+                        <li style="padding: 0.5rem 0;">✓ Domiciliëring mogelijk</li>
+                        <li style="padding: 0.5rem 0;">✓ Fietsenstalling</li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <h3>🏠 Faciliteiten</h3>
+                    <ul style="list-style: none; margin-top: 1rem;">
+                        <li style="padding: 0.5rem 0;">✓ Wasmachine & droogkast</li>
+                        <li style="padding: 0.5rem 0;">✓ Gemeenschappelijke living</li>
+                        <li style="padding: 0.5rem 0;">✓ Volledig uitgeruste keuken</li>
+                        <li style="padding: 0.5rem 0;">✓ Tuin/terras</li>
+                        <li style="padding: 0.5rem 0;">✓ Veilige buurt</li>
+                        <li style="padding: 0.5rem 0;">✓ Begeleiding & onderhoud</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 style="color: #333; margin: 2rem 0 1.5rem 0; font-size: 1.5rem;">Ontdek Een Paar Van Onze Kamers</h3>
+            <div class="grid-3" id="roomPreview"></div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="kamers.html" class="btn">Bekijk Alle 10 Kamers →</a>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%); color: white; text-align: center;">
+            <h2 style="color: white; border: none;">Klaar Om Je Nieuwe Thuis Te Vinden?</h2>
+            <p style="font-size: 1.2rem; margin: 1.5rem 0;">Neem vandaag nog contact op voor een bezichtiging!</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                <a href="contact.html" class="btn" style="background: white; color: var(--primary-color);">📧 Contact Opnemen</a>
+                <a href="kamers.html" class="btn-secondary" style="background: transparent; border: 2px solid white; color: white;">🏠 Bekijk Kamers</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Studentenkamers Turnhout. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script>
+        // Sample rooms data (same as in other pages)
+        const rooms = [
+            {
+                id: 1,
+                name: "Kamer 1 - Ruime Studio",
+                price: "€425",
+                size: "22m²",
+                floor: "Gelijkvloers",
+                features: ["Eigen bureau", "Ruime kledingkast", "Wastafel op kamer"]
+            },
+            {
+                id: 2,
+                name: "Kamer 2 - Gezellige Kamer",
+                price: "€385",
+                size: "18m²",
+                floor: "1ste verdieping",
+                features: ["Comfortabel bed", "Bureau met lamp", "Rustige ligging"]
+            },
+            {
+                id: 3,
+                name: "Kamer 3 - Studentenkamer Plus",
+                price: "€450",
+                size: "24m²",
+                floor: "1ste verdieping",
+                features: ["Extra grote kledingkast", "Zithoek", "Balkon"]
+            }
+        ];
+
+        // Display preview of first 3 rooms
+        const previewContainer = document.getElementById('roomPreview');
+        rooms.forEach(room => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.style.cursor = 'pointer';
+            card.onclick = () => window.location.href = `kamer-${room.id}.html`;
+            
+            card.innerHTML = `
+                <div class="card-image">🏠</div>
+                <div class="card-content">
+                    <h3>${room.name}</h3>
+                    <div class="room-price">${room.price}/maand</div>
+                    <ul class="room-features">
+                        <li>${room.size}</li>
+                        <li>${room.floor}</li>
+                        ${room.features.slice(0, 2).map(f => `<li>${f}</li>`).join('')}
+                    </ul>
+                    <a href="kamer-${room.id}.html" class="btn" style="margin-top: 1rem;">Bekijk Details</a>
+                </div>
+            `;
+            
+            previewContainer.appendChild(card);
+        });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Building photo handler - show placeholder if image doesn't exist
+        const buildingPhoto = document.getElementById('buildingPhoto');
+        const buildingPlaceholder = document.getElementById('buildingPlaceholder');
+        
+        if (buildingPhoto) {
+            buildingPhoto.onerror = function() {
+                buildingPhoto.style.display = 'none';
+                buildingPlaceholder.style.display = 'flex';
+            };
+            buildingPhoto.onload = function() {
+                buildingPhoto.style.display = 'block';
+                buildingPlaceholder.style.display = 'none';
+            };
+        }
+    </script>
+</body>
+</html>

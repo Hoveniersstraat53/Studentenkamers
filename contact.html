@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Studentenkamers Turnhout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Studentenkamers Turnhout</a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kamers.html">Kamers</a></li>
+                <li><a href="voorwaarden.html">Voorwaarden</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Neem Contact Op</h1>
+        <p>Vragen over onze kamers? We helpen je graag verder!</p>
+    </div>
+
+    <div class="container">
+        <section>
+            <h2>Contactgegevens</h2>
+            <p style="margin-bottom: 2rem;">Interesse in één van onze kamers of heb je vragen? Neem gerust contact met ons op. We reageren binnen 24 uur op alle vragen.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>📧 Email</h3>
+                    <a href="mailto:hoveniersstraat53@gmail.com">hoveniersstraat53@gmail.com</a>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">We reageren meestal binnen 24 uur</p>
+                </div>
+                <div class="contact-card">
+                    <h3>📱 Telefoon</h3>
+                    <p>
+                      <a href="tel:+32494451316">Lowie: 0032 494 45 13 16</a>
+                    </p>
+                    <p>
+                      <a href="tel:+32498277768">Stien: 0032 498 27 77 68</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Locatie</h2>
+            <div class="info-box">
+                <h3>📍 Adres</h3>
+                <p style="margin-top: 0.5rem; font-size: 1.1rem;">
+                    <strong>Voorbeeldstraat 123</strong><br>
+                    2300 Turnhout<br>
+                    België
+                </p>
+            </div>
+
+            <div style="margin-top: 2rem;">
+                <h3 style="color: #333; margin-bottom: 1rem;">🚗 Bereikbaarheid</h3>
+                <div class="grid-2">
+                    <div class="info-box">
+                        <h4 style="margin-bottom: 0.5rem;">Met de Auto</h4>
+                        <p>Gratis parkeren in de straat. Turnhout is gemakkelijk bereikbaar via de E34.</p>
+                    </div>
+                    <div class="info-box">
+                        <h4 style="margin-bottom: 0.5rem;">Openbaar Vervoer</h4>
+                        <p>Bushalte op 2 minuten lopen. Station Turnhout op 15 minuten fietsen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Bezichtiging Aanvragen</h2>
+            <p style="margin-bottom: 1.5rem;">Wil je een kamer komen bekijken? Stuur ons een bericht met de volgende informatie:</p>
+            
+            <div class="info-box">
+                <ul style="list-style: none;">
+                    <li style="padding: 0.5rem 0;">✓ Welke kamer(s) je wilt bezichtigen</li>
+                    <li style="padding: 0.5rem 0;">✓ Wanneer je beschikbaar bent (datum + tijdstip)</li>
+                    <li style="padding: 0.5rem 0;">✓ Je naam en telefoonnummer</li>
+                    <li style="padding: 0.5rem 0;">✓ Eventuele specifieke vragen</li>
+                </ul>
+            </div>
+
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="mailto:hoveniersstraat53@gmail.com?subject=Bezichtiging Aanvraag" class="btn" style="margin-right: 1rem;">📧 Email voor Bezichtiging</a>
+                <a href="tel:0032 494 45 13 16" class="btn-secondary">📱 Bel Direct</a>
+            </div>
+        </section>
+
+        <section style="background: var(--accent-color);">
+            <h2>Veelgestelde Vragen</h2>
+            <div style="margin-top: 1.5rem;">
+                <div class="info-box" style="margin-bottom: 1rem; background: white;">
+                    <h4 style="margin-bottom: 0.5rem;">Wanneer kan ik een kamer bezichtigen?</h4>
+                    <p>Bezichtigingen zijn mogelijk van maandag t/m zaterdag. Neem contact op om een afspraak te maken.</p>
+                </div>
+                <div class="info-box" style="margin-bottom: 1rem; background: white;">
+                    <h4 style="margin-bottom: 0.5rem;">Hoe snel krijg ik antwoord?</h4>
+                    <p>We streven ernaar om binnen 24 uur te reageren op alle aanvragen.</p>
+                </div>
+                <div class="info-box" style="margin-bottom: 1rem; background: white;">
+                    <h4 style="margin-bottom: 0.5rem;">Kan ik meerdere kamers bezichtigen?</h4>
+                    <p>Natuurlijk! Geef bij je aanvraag aan welke kamers je wilt zien en we plannen alles in één afspraak.</p>
+                </div>
+                <div class="info-box" style="background: white;">
+                    <h4 style="margin-bottom: 0.5rem;">Wat moet ik meebrengen naar een bezichtiging?</h4>
+                    <p>Je hoeft niets mee te brengen. Als je direct wilt reserveren, is een kopie van je studentenkaart handig.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Lowie Hermans. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

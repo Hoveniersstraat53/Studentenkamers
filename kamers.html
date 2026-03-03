@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alle Kamers - Studentenkamers Turnhout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Studentenkamers Turnhout</a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kamers.html" class="active">Kamers</a></li>
+                <li><a href="voorwaarden.html">Voorwaarden</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Onze Beschikbare Kamers</h1>
+        <p>10 Volledig bemeubelde Studentenkamers - Klaar om in te Trekken</p>
+    </div>
+
+    <div class="container">
+        <section>
+            <h2>Alle Kamers</h2>
+            <p style="margin-bottom: 2rem;">Klik op een kamer om alle details te bekijken en contact op te nemen voor een bezichtiging.</p>
+            
+            <div class="grid-3" id="roomsGrid"></div>
+        </section>
+
+        <section style="background: var(--accent-color);">
+            <h2>Niet Gevonden Wat Je Zoekt?</h2>
+            <p>Neem gerust contact met ons op. Mogelijk hebben we binnenkort nieuwe kamers beschikbaar of kunnen we je verder helpen met je specifieke wensen.</p>
+            <div style="margin-top: 1.5rem;">
+                <a href="contact.html" class="btn">Contact Opnemen</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Studentenkamers Turnhout. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <!-- Laad eerst room-data.js, daarna deze script -->
+    <script src="room-data.js"></script>
+    <script>
+        // Genereer kamer cards uit de gedeelde rooms data
+        const roomsGrid = document.getElementById('roomsGrid');
+        rooms.forEach(room => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.style.cursor = 'pointer';
+            card.onclick = () => window.location.href = `kamer-detail.html?id=${room.id}`;
+            
+            card.innerHTML = `
+                <div class="card-image" ${room.image ? `style="background-image: url('${room.image}'); background-size: cover; background-position: center;"` : ''}>
+                    ${room.image ? '' : '🏠'}
+                </div>
+                <div class="card-content">
+                    <h3>${room.name}</h3>
+                    <div class="room-price">${room.price}/maand</div>
+                    <ul class="room-features">
+                        <li>${room.size}</li>
+                        <li>${room.floor}</li>
+                        <li>${room.furnished}</li>
+                    </ul>
+                    <a href="kamer-detail.html?id=${room.id}" class="btn" style="margin-top: 1rem;" onclick="event.stopPropagation();">Bekijk Details</a>
+                </div>
+            `;
+            
+            roomsGrid.appendChild(card);
+        });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
