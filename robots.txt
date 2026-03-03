@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://opkotturnhout.be/sitemap.xml
