@@ -2,7 +2,7 @@
 const rooms = [
     {
         id: 1,
-        name: "Kamer 1 - Gelijkvloerse kamer zijkant",
+        name: "Kamer 1 - Gelijkvloers kamer zijkant",
         price: "€320",
         kosten: "€50",
         size: "22m²",
@@ -13,7 +13,7 @@ const rooms = [
     },
     {
         id: 2,
-        name: "Kamer 2 - Gelijkvloerse kamer achterkant",
+        name: "Kamer 2 - Gelijkvloers kamer achterkant",
         price: "€320",
         kosten: "€50",
         size: "21m²",
